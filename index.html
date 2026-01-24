@@ -126,45 +126,82 @@
         <p class="section-description">Explore my growing portfolio of applications, starting from foundational projects and progressing toward more advanced web solutions.</p>
       </div>
       <div class="projects-grid">
-        <div class="project-card">
-          <div class="project-image" style="background: linear-gradient(135deg, #ec4899, #ef4444);">E-Commerce</div>
+        <!-- Project 1 -->
+        <div class="project-card" onclick="openModal('project1')">
+          <div class="project-image">
+            <img src="YOUR_IMAGE_URL_HERE" alt="NutriAksyon">
+          </div>
           <div class="project-content">
-            <h3>E-Commerce API Platform</h3>
+            <div class="project-header">
+              <h3>NutriAksyon</h3>
+              <span class="project-category">E-Commerce Platform</span>
+            </div>
             <p>A robust RESTful API built with ASP.NET Core, featuring JWT authentication, payment integration, and real-time inventory management.</p>
-            <div class="project-tags">
-              <span class="tag">ASP.NET Core</span>
-              <span class="tag">Entity Framework</span>
-              <span class="tag">SQL Server</span>
-              <span class="tag">JWT</span>
+            <div class="project-actions">
+              <button class="project-btn btn-repo" onclick="event.stopPropagation(); window.open('YOUR_GITHUB_URL', '_blank')">
+                <i class="ri-github-fill"></i> Repository
+              </button>
+              <button class="project-btn btn-visit" onclick="event.stopPropagation(); window.open('YOUR_WEBSITE_URL', '_blank')">
+                <i class="ri-external-link-fill"></i> Visit Site
+              </button>
             </div>
           </div>
         </div>
-        <div class="project-card">
-          <div class="project-image" style="background: linear-gradient(135deg, #8b5cf6, #7c3aed);">CRM</div>
+
+        <!-- Project 2 -->
+        <div class="project-card" onclick="openModal('project2')">
+          <div class="project-image">
+            <img src="YOUR_IMAGE_URL_HERE" alt="Task Management System">
+          </div>
           <div class="project-content">
+            <div class="project-header">
               <h3>Task Management System</h3>
-              <p>Full-stack web application with real-time collaboration, drag-and-drop functionality, and comprehensive project analytics.</p>
-              <div class="project-tags">
-                <span class="tag">ASP.NET MVC</span>
-                <span class="tag">SignalR</span>
-                <span class="tag">Bootstrap</span>
-                <span class="tag">Chart.js</span>
-              </div>
-          </div>
-        </div>
-        <div class="project-card">
-          <div class="project-image" style="background: linear-gradient(135deg, #10b981, #14b8a6);">Real Estate</div>
-          <div class="project-content">
-            <h3>Real Estate CRM</h3>
-            <p>Customer relationship management system for real estate agencies with lead tracking, property management, and automated workflows.</p>
-            <div class="project-tags">
-              <span class="tag">Blazor</span>
-              <span class="tag">Entity Framework</span>
-              <span class="tag">Azure</span>
-              <span class="tag">SendGrid</span>
+              <span class="project-category">Productivity Tool</span>
+            </div>
+            <p>Full-stack web application with real-time collaboration, drag-and-drop functionality, and comprehensive project analytics.</p>
+            <div class="project-actions">
+              <button class="project-btn btn-repo" onclick="event.stopPropagation(); window.open('YOUR_GITHUB_URL', '_blank')">
+                <i class="ri-github-fill"></i> Repository
+              </button>
+              <button class="project-btn btn-visit" onclick="event.stopPropagation(); window.open('YOUR_WEBSITE_URL', '_blank')">
+                <i class="ri-external-link-fill"></i> Visit Site
+              </button>
             </div>
           </div>
         </div>
+
+        <!-- Project 3 -->
+        <div class="project-card" onclick="openModal('project3')">
+          <div class="project-image">
+            <img src="YOUR_IMAGE_URL_HERE" alt="Real Estate CRM">
+          </div>
+          <div class="project-content">
+            <div class="project-header">
+              <h3>Real Estate CRM</h3>
+              <span class="project-category">Business Management</span>
+            </div>
+            <p>Customer relationship management system for real estate agencies with lead tracking, property management, and automated workflows.</p>
+            <div class="project-actions">
+              <button class="project-btn btn-repo" onclick="event.stopPropagation(); window.open('YOUR_GITHUB_URL', '_blank')">
+                <i class="ri-github-fill"></i> Repository
+              </button>
+              <button class="project-btn btn-visit" onclick="event.stopPropagation(); window.open('YOUR_WEBSITE_URL', '_blank')">
+                <i class="ri-external-link-fill"></i> Visit Site
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal -->
+    <div id="projectModal" class="modal">
+      <div class="modal-overlay" onclick="closeModal()"></div>
+      <div class="modal-content">
+        <button class="modal-close" onclick="closeModal()">
+          <i class="ri-close-line"></i>
+        </button>
+        <div id="modalBody"></div>
       </div>
     </div>
   </section>
