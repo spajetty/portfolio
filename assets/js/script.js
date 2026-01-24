@@ -26,3 +26,26 @@ document.querySelectorAll('.nav-button').forEach(button => {
     navLinks.classList.remove('active');
   });
 });
+
+// Typewriter effect
+const typewriterText = "Hi, I'm Jetty";
+const typewriterElement = document.getElementById('typewriter');
+let charIndex = 0;
+
+function typeWriter() {
+  if (charIndex < typewriterText.length) {
+    typewriterElement.textContent += typewriterText.charAt(charIndex);
+    charIndex++;
+    setTimeout(typeWriter, 150); // Adjust speed here (lower = faster)
+  } else {
+    // Remove cursor after typing is complete
+    setTimeout(() => {
+      typewriterElement.style.borderRight = 'none';
+    }, 1000);
+  }
+}
+
+// Start typewriter effect when page loads
+window.addEventListener('load', () => {
+  setTimeout(typeWriter, 500); // Start after 500ms delay
+});
