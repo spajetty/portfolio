@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jethro James Aguilar - .NET Developer Portfolio</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+  <nav id="navbar">
+    <div class="nav-container">
+      <div class="logo-section">
+        <div class="logo-box">
+          <div class="logo-spinner"></div>
+          <div class="logo-inner">
+            <span class="logo-text">JA</span>
+          </div>
+        </div>
+        <div class="logo-title">
+          <h1>< Jetty /></h1>
+        </div>
+      </div>
+      <div class="nav-links">
+        <button class="nav-button" onclick="scrollToSection('hero')">
+          <div class="nav-button-bg" style="background: linear-gradient(to right, #ec4899, #ef4444);"></div>
+          <span><i class="ri-home-4-fill"></i> Home</span>
+        </button>
+        <button class="nav-button" onclick="scrollToSection('projects')">
+          <div class="nav-button-bg" style="background: linear-gradient(to right, #3b82f6, #06b6d4);"></div>
+          <span><i class="ri-code-box-fill"></i> Projects</span>
+        </button>
+        <button class="nav-button" onclick="scrollToSection('skills')">
+          <div class="nav-button-bg" style="background: linear-gradient(to right, #10b981, #14b8a6);"></div>
+          <span><i class="ri-tools-fill"></i> Skills</span>
+        </button>
+       <button class="nav-button" onclick="scrollToSection('contact')">
+          <div class="nav-button-bg" style="background: linear-gradient(to right, #f97316, #fbbf24);"></div>
+          <span><i class="ri-mail-send-fill"></i> Contact</span>
+       </button>
+      </div>
+      <button class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <section id="hero">
+    <div class="hero-bg"></div>
+      <div class="hero-overlay"></div>
+      <div class="floating-shapes">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+      </div>
+      <div class="hero-content">
+        <div class="profile-container">
+          <div class="profile-wrapper">
+            <div class="profile-ring-outer">
+              <div class="profile-ring-inner"></div>
+            </div>
+            <div class="profile-ring-2"></div>
+            <img src="https://public.readdy.ai/ai/img_res/0f732d1a-7b17-4838-b45d-873b159bfacc.png" alt="Jethro James Aguilar" class="profile-img">
+          </div>
+        </div>
+        <h1 class="hero-title">Jethro James</h1>
+        <h2 class="hero-subtitle"><span>Aguilar</span></h2>
+        <div class="badges">
+          <div class="badge badge-1">.NET Developer</div>
+          <div class="badge badge-2">Software Engineer</div>
+          <div class="badge badge-3">Full Stack</div>
+        </div>
+        <p class="hero-description">
+          Passionate about building robust and scalable applications using the .NET ecosystem. 
+          I specialize in creating efficient backend solutions, RESTful APIs, and modern web applications that solve real-world problems.
+        </p>
+        <div class="cta-buttons">
+          <button class="cta-btn cta-btn-1" onclick="scrollToSection('projects')">🚀 View My Work</button>
+          <button class="cta-btn cta-btn-2" onclick="scrollToSection('contact')">💬 Get In Touch</button>
+        </div>
+        <div class="social-links">
+          <a href="https://github.com" target="_blank" class="social-link social-github">
+              <i class="ri-github-fill"></i>
+          </a>
+          <a href="https://linkedin.com" target="_blank" class="social-link social-linkedin">
+              <i class="ri-linkedin-box-fill"></i>
+          </a>
+          <a href="mailto:jethro@example.com" class="social-link social-email">
+              <i class="ri-mail-fill"></i>
+          </a>
+        </div>
+      </div> 
+    </div>
+  </section>
+
+  <section id="projects" class="section-bg-dark">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-badge" style="background: linear-gradient(to right, #ec4899, #7c3aed);">
+          <i class="ri-code-box-fill" style="font-size: 1.5rem;"></i>
+          <span>Featured Projects</span>
+        </div>
+        <h2 class="section-title">My <span class="gradient-text">Creative</span> Work</h2>
+        <p class="section-description">Explore my portfolio of .NET applications, from enterprise solutions to innovative web platforms</p>
+      </div>
+      <div class="projects-grid">
+        <div class="project-card">
+          <div class="project-image" style="background: linear-gradient(135deg, #ec4899, #ef4444);">E-Commerce</div>
+          <div class="project-content">
+            <h3>E-Commerce API Platform</h3>
+            <p>A robust RESTful API built with ASP.NET Core, featuring JWT authentication, payment integration, and real-time inventory management.</p>
+            <div class="project-tags">
+              <span class="tag">ASP.NET Core</span>
+              <span class="tag">Entity Framework</span>
+              <span class="tag">SQL Server</span>
+              <span class="tag">JWT</span>
+            </div>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-image" style="background: linear-gradient(135deg, #8b5cf6, #7c3aed);">CRM</div>
+          <div class="project-content">
+              <h3>Task Management System</h3>
+              <p>Full-stack web application with real-time collaboration, drag-and-drop functionality, and comprehensive project analytics.</p>
+              <div class="project-tags">
+                <span class="tag">ASP.NET MVC</span>
+                <span class="tag">SignalR</span>
+                <span class="tag">Bootstrap</span>
+                <span class="tag">Chart.js</span>
+              </div>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-image" style="background: linear-gradient(135deg, #10b981, #14b8a6);">Real Estate</div>
+          <div class="project-content">
+            <h3>Real Estate CRM</h3>
+            <p>Customer relationship management system for real estate agencies with lead tracking, property management, and automated workflows.</p>
+            <div class="project-tags">
+              <span class="tag">Blazor</span>
+              <span class="tag">Entity Framework</span>
+              <span class="tag">Azure</span>
+              <span class="tag">SendGrid</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills" class="section-bg-light">
+    <div class="container">
+        <div class="section-header">
+            <div class="section-badge" style="background: linear-gradient(to right, #10b981, #14b8a6);">
+                <i class="ri-tools-fill" style="font-size: 1.5rem;"></i>
+                <span>Technical Expertise</span>
+            </div>
+            <h2 class="section-title">Skills & <span class="gradient-text">Technologies</span></h2>
+            <p class="section-description">A comprehensive overview of my technical skills and proficiency levels across different domains</p>
+        </div>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <div class="skill-header">
+                    <div class="skill-icon" style="background: linear-gradient(to right, #3b82f6, #8b5cf6);">
+                        <i class="ri-server-line"></i>
+                    </div>
+                    <div>
+                        <h3>Backend Development</h3>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-name">
+                        <span>C#</span>
+                        <span>95%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 95%; background: linear-gradient(to right, #8b5cf6, #7c3aed);"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-name">
+                        <span>ASP.NET Core</span>
+                        <span>90%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 90%; background: linear-gradient(to right, #3b82f6, #06b6d4);"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-name">
+                        <span>Entity Framework</span>
+                        <span>85%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 85%; background: linear-gradient(to right, #10b981, #14b8a6);"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-header">
+                    <div class="skill-icon" style="background: linear-gradient(to right, #10b981, #14b8a6);">
+                        <i class="ri-database-2-line"></i>
+                    </div>
+                    <div>
+                        <h3>Database & Storage</h3>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-name">
+                        <span>SQL Server</span>
+                        <span>92%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 92%; background: linear-gradient(to right, #ef4444, #f97316);"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-name">
+                        <span>PostgreSQL</span>
+                        <span>75%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 75%; background: linear-gradient(to right, #3b82f6, #6366f1);"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-name">
+                        <span>Redis</span>
+                        <span>70%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 70%; background: linear-gradient(to right, #dc2626, #ec4899);"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-header">
+                    <div class="skill-icon" style="background: linear-gradient(to right, #ec4899, #ef4444);">
+                        <i class="ri-code-line"></i>
+                    </div>
+                    <div>
+                        <h3>Frontend Technologies</h3>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-name">
+                        <span>React</span>
+                        <span>85%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 85%; background: linear-gradient(to right, #22d3ee, #3b82f6);"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-name">
+                        <span>JavaScript</span>
+                        <span>88%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 88%; background: linear-gradient(to right, #fbbf24, #f97316);"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-name">
+                        <span>HTML/CSS</span>
+                        <span>90%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 90%; background: linear-gradient(to right, #f97316, #ef4444);"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section-bg-dark">
+    <div class="container">
+      <div class="section-header">
+          <div class="section-badge" style="background: linear-gradient(to right, #f97316, #ec4899);">
+              <i class="ri-mail-send-fill" style="font-size: 1.5rem;"></i>
+              <span>Get In Touch</span>
+          </div>
+          <h2 class="section-title">Let's <span class="gradient-text">Connect</span></h2>
+          <p class="section-description">Ready to discuss your next project? I'm always excited to work on innovative solutions and bring ideas to life.</p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <div class="contact-card">
+            <div class="contact-card-header">
+              <div class="contact-icon" style="background: linear-gradient(to right, #ec4899, #ef4444);">
+                <i class="ri-mail-fill"></i>
+              </div>
+              <div>
+                <h4>Email Me</h4>
+                <p style="font-weight: 600;">jethro@example.com</p>
+                <p>Send me an email anytime</p>
+              </div>
+            </div>
+          </div>
+          <div class="contact-card">
+            <div class="contact-card-header">
+              <div class="contact-icon" style="background: linear-gradient(to right, #10b981, #14b8a6);">
+                <i class="ri-phone-fill"></i>
+              </div>
+              <div>
+                <h4>Call Me</h4>
+                <p style="font-weight: 600;">+1 (555) 123-4567</p>
+                <p>Available Mon-Fri, 9AM-5PM</p>
+              </div>
+            </div>
+          </div>
+          <div class="contact-card">
+            <div class="contact-card-header">
+              <div class="contact-icon" style="background: linear-gradient(to right, #3b82f6, #06b6d4);">
+                <i class="ri-map-pin-fill"></i>
+              </div>
+              <div>
+                <h4>Location</h4>
+                <p style="font-weight: 600;">Philippines</p>
+                <p>Open to remote opportunities</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="contact-form">
+          <h3><i class="ri-message-3-line"></i> Send a Message</h3>
+          <form>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" placeholder="Enter your full name" required>
+              </div>
+              <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" placeholder="your.email@example.com" required>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" placeholder="Tell me about your project or just say hello..." required></textarea>
+            </div>
+            <button type="submit" class="submit-btn">
+              <i class="ri-send-plane-fill"></i> Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Jethro James Aguilar. All rights reserved.</p>
+  </footer>
+
+  <script src="./assets/js/script.js"></script>
+
+</body>
+</html>
