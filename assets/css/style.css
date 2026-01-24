@@ -1162,6 +1162,189 @@ section {
   }
 }
 
+#education {
+  position: relative;
+  padding: 6rem 1.5rem;
+  overflow: hidden;
+  background: linear-gradient(135deg, #f8fafc, #f1f5f9);
+}
+
+.educ-container {
+  max-width: 900px;
+  margin: auto;
+  position: relative;
+  z-index: 2;
+}
+
+/* BACKGROUND BLOBS */
+.bg-effects .blob {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(80px);
+  opacity: 0.3;
+  animation: pulse 6s infinite ease-in-out;
+}
+
+.blob.pink {
+  width: 160px;
+  height: 160px;
+  top: 10%;
+  right: 10%;
+  background: #ec4899;
+}
+
+.blob.cyan {
+  width: 140px;
+  height: 140px;
+  bottom: 15%;
+  left: 10%;
+  background: #06b6d4;
+}
+
+/* HEADER */
+.section-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.badge {
+  display: inline-flex;
+  gap: 0.5rem;
+  align-items: center;
+  padding: 0.75rem 1.5rem;
+  background: linear-gradient(90deg, #8b5cf6, #a855f7);
+  color: white;
+  border-radius: 999px;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+.section-header h2 {
+  font-size: 3rem;
+  background: linear-gradient(90deg, #8b5cf6, #ec4899);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.section-header p {
+  max-width: 600px;
+  margin: 1rem auto 0;
+  color: #6b7280;
+}
+
+/* TIMELINE */
+.timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+/* CARD */
+.edu-card {
+  display: flex;
+  gap: 1.5rem;
+  background: white;
+  border-radius: 1.5rem;
+  padding: 2rem;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+  transition: transform 0.4s, box-shadow 0.4s;
+}
+
+.edu-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 30px 60px rgba(0,0,0,0.12);
+}
+
+.edu-card .icon {
+  width: 64px;
+  height: 64px;
+  border-radius: 1rem;
+  display: grid;
+  place-items: center;
+  color: white;
+  font-size: 1.75rem;
+  flex-shrink: 0;
+}
+
+.edu-card.violet .icon {
+  background: linear-gradient(90deg, #8b5cf6, #a855f7);
+}
+
+.edu-card.cyan .icon {
+  background: linear-gradient(90deg, #06b6d4, #2563eb);
+}
+
+.edu-card.jhs .icon {
+  background: linear-gradient(90deg, #f59e0b, #f97316); /* amber → orange */
+}
+
+.edu-card.jhs:hover {
+  box-shadow: 0 30px 60px rgba(249, 115, 22, 0.25);
+}
+
+/* Optional: subtle warm accent on hover */
+.edu-card.jhs::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 1.5rem;
+  background: linear-gradient(135deg, rgba(249,115,22,0.08), transparent);
+  opacity: 0;
+  transition: opacity 0.4s;
+  pointer-events: none;
+}
+
+.edu-card.jhs:hover::after {
+  opacity: 1;
+}
+
+.content h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.25rem;
+}
+
+.school {
+  font-weight: 600;
+  color: #4b5563;
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.meta {
+  text-align: right;
+}
+
+.year {
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  border-radius: 999px;
+  background: #e5e7eb;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.gpa {
+  font-size: 0.85rem;
+  color: #6b7280;
+}
+
+.description {
+  margin: 1.25rem 0;
+  color: #6b7280;
+  line-height: 1.6;
+}
+
+/* ANIMATIONS */
+@keyframes pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.2); }
+}
+
 .skills-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
