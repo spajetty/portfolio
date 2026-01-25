@@ -199,6 +199,40 @@ const projectData = {
 
     repoUrl: "https://github.com/spajetty/diaria-web-app",
     websiteUrl: "https://diaria.netlify.app/"
+  },
+  project5: {
+    title: "Planorama",
+    category: "Event Management System",
+    description:
+      "Planorama is a desktop-based event management system developed for the Polytechnic University of the Philippines. It enables organizers to create and manage events, track registrations and attendees, and generate reports to support efficient campus and off-campus event planning.",
+
+    learned: [
+      "Designed and implemented a multi-entity database-driven system",
+      "Applied object-oriented programming principles using Java",
+      "Built desktop user interfaces with Java Swing",
+      "Managed event, registration, and attendee data using relational databases",
+      "Created ERDs and data schemas for structured system design"
+    ],
+
+    techStack: [
+      "Java",
+      "Java Swing",
+      "JDK",
+      "phpMyAdmin",
+      "MySQL",
+      "Eclipse IDE"
+    ],
+
+    features: [
+      "Create and schedule events with detailed information",
+      "Categorize events by type (corporate, social, cultural, etc.)",
+      "Online event registration and attendee management",
+      "Real-time tracking of registered participants",
+      "Event and participation cancellation",
+      "Generate reports on attendance and participation trends"
+    ],
+
+    repoUrl: "https://github.com/spajetty/event-mngmnt-system"
   }
 };
 
