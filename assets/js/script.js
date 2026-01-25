@@ -130,27 +130,39 @@ const projectData = {
     websiteUrl: "https://meditrack-web-app.vercel.app/"
   },
   project3: {
-    title: "Real Estate CRM",
-    category: "Business Management",
-    description: "A customer relationship management system tailored for real estate agencies.",
+    title: "DonDon: Dorayaki Bites!",
+    category: "Food Management System",
+    description:
+      "A web-based food ordering and management system that enables customers to browse menus, place and track orders, while allowing administrators to manage inventory and operations in real time.",
     learned: [
-      "Built interactive UI with Blazor components",
-      "Implemented automated email workflows with SendGrid",
-      "Deployed application to Azure cloud",
-      "Created complex database relationships with EF Core",
-      "Implemented file upload and management system"
+      "Designed end-to-end food ordering workflows",
+      "Implemented real-time order and stock updates",
+      "Integrated Firebase for authentication and data handling",
+      "Built responsive UI using Bootstrap",
+      "Managed relational data using SQL and MySQL"
     ],
-    techStack: ["Blazor", "Entity Framework", "Azure", "SendGrid", "SQL Server", "Azure Blob Storage"],
+    techStack: [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "Bootstrap",
+      "Firebase",
+      "MySQL",
+      "SQL",
+      "VS Code"
+    ],
     features: [
-      "Add new leads and client information",
-      "Track property listings and matches",
-      "Schedule appointments and follow-ups",
-      "Send automated email campaigns",
-      "Generate reports on sales performance"
+      "Browse menus by branch with item details and images",
+      "Add items to cart and manage orders",
+      "Real-time order status tracking",
+      "Cash-on-delivery payment option",
+      "Real-time stock availability updates",
+      "Customer feedback and rating system",
+      "Admin dashboard for inventory and order management"
     ],
-    repoUrl: "YOUR_GITHUB_URL",
-    websiteUrl: "YOUR_WEBSITE_URL"
-  }
+    repoUrl: "https://github.com/spajetty/dondon-web-app",
+    websiteUrl: "https://dondondorayaki.netlify.app/"
+  },
 };
 
 function openModal(projectId) {
