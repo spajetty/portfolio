@@ -54,31 +54,43 @@ window.addEventListener('load', () => {
 const projectData = {
   project1: {
     title: "NutriAksyon",
-    category: "E-Commerce Platform",
-    description: "A comprehensive nutrition and health e-commerce platform built with ASP.NET Core.",
+    category: "Child Nutrition Monitoring System",
+    description:
+      "A full-stack web system that monitors child nutrition through automated WHO-based BMI and HFA computation, food recommendations, and real-time reporting.",
     learned: [
-      "Implemented JWT authentication and authorization",
-      "Integrated payment gateways for secure transactions",
-      "Built RESTful APIs following best practices",
-      "Managed real-time inventory with Entity Framework",
-      "Implemented caching strategies for performance optimization"
+      "Implemented role-based authentication using JWT",
+      "Automated BMI and HFA calculations based on WHO standards",
+      "Designed real-time dashboards using SignalR and Chart.js",
+      "Built scalable RESTful APIs with ASP.NET Core",
+      "Generated and exported nutrition reports per monitoring cycle",
+      "Created food-recommendation algorithms"
     ],
-    techStack: ["ASP.NET Core", "Entity Framework", "SQL Server", "JWT", "Stripe API", "Redis"],
-    howToUse: [
-      "Register an account or login with existing credentials",
-      "Browse products by category or search",
-      "Add items to cart and proceed to checkout",
-      "Complete payment using secure payment gateway",
-      "Track your order status in your profile"
+    techStack: [
+      "TypeScript",
+      "React",
+      "Vite",
+      "Tailwind CSS",
+      "Chart.js",
+      "Calendar.js",
+      "SignalR",
+      "ASP.NET Core",
+      "Entity Framework Core",
+      "SQL Server",
+      "JWT",
+      "Azure App Service",
+      "Azure SQL",
+      "Vercel"
     ],
-    gallery: [
-      "URL_TO_IMAGE_1",
-      "URL_TO_IMAGE_2",
-      "URL_TO_IMAGE_3",
-      "URL_TO_IMAGE_4"
+    features: [
+      "Role-based login for teachers, coordinators, and administrators",
+      "Automated BMI and HFA computation using WHO standards",
+      "Nutrition status analysis with food recommendations",
+      "Real-time dashboards and analytics",
+      "Exportable reports per feeding or monitoring cycle",
+      "Centralized child nutrition records"
     ],
-    repoUrl: "YOUR_GITHUB_URL",
-    websiteUrl: "YOUR_WEBSITE_URL"
+    repoUrl: "https://github.com/spajetty/nutriaksyon", // Private repository (Data Privacy Act of 2012)
+    websiteUrl: "https://nutriaksyon.vercel.app/"
   },
   project2: {
     title: "Task Management System",
@@ -92,18 +104,12 @@ const projectData = {
       "Implemented team collaboration features"
     ],
     techStack: ["ASP.NET MVC", "SignalR", "Bootstrap", "Chart.js", "jQuery", "SQL Server"],
-    howToUse: [
+    features: [
       "Create a new project or join existing team",
       "Add tasks and assign to team members",
       "Drag and drop tasks between columns",
       "Set deadlines and priority levels",
       "View analytics and progress reports"
-    ],
-    gallery: [
-      "URL_TO_IMAGE_1",
-      "URL_TO_IMAGE_2",
-      "URL_TO_IMAGE_3",
-      "URL_TO_IMAGE_4"
     ],
     repoUrl: "YOUR_GITHUB_URL",
     websiteUrl: "YOUR_WEBSITE_URL"
@@ -120,18 +126,12 @@ const projectData = {
       "Implemented file upload and management system"
     ],
     techStack: ["Blazor", "Entity Framework", "Azure", "SendGrid", "SQL Server", "Azure Blob Storage"],
-    howToUse: [
+    features: [
       "Add new leads and client information",
       "Track property listings and matches",
       "Schedule appointments and follow-ups",
       "Send automated email campaigns",
       "Generate reports on sales performance"
-    ],
-    gallery: [
-      "URL_TO_IMAGE_1",
-      "URL_TO_IMAGE_2",
-      "URL_TO_IMAGE_3",
-      "URL_TO_IMAGE_4"
     ],
     repoUrl: "YOUR_GITHUB_URL",
     websiteUrl: "YOUR_WEBSITE_URL"
@@ -168,20 +168,9 @@ function openModal(projectId) {
       </div>
       
       <div class="modal-section">
-        <h3><i class="ri-image-line"></i> Gallery</h3>
-        <div class="gallery">
-          ${project.gallery.map(img => `
-            <div class="gallery-item">
-              <img src="${img}" alt="Project screenshot">
-            </div>
-          `).join('')}
-        </div>
-      </div>
-      
-      <div class="modal-section">
-        <h3><i class="ri-guide-line"></i> How to Use</h3>
+        <h3><i class="ri-guide-line"></i> Features</h3>
         <ul>
-          ${project.howToUse.map(step => `<li>${step}</li>`).join('')}
+          ${project.features.map(step => `<li>${step}</li>`).join('')}
         </ul>
       </div>
       
