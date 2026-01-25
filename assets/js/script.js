@@ -233,6 +233,40 @@ const projectData = {
     ],
 
     repoUrl: "https://github.com/spajetty/event-mngmnt-system"
+  },
+  project6: {
+    title: "Journalism Portfolio Website",
+    category: "Personal Portfolio Website",
+    description:
+      "A journalism portfolio website created to showcase articles, features, and multimedia works. The site emphasizes clear storytelling, editorial layout, and accessibility, serving as both a personal brand platform and an online archive of published pieces.",
+
+    learned: [
+      "Applied editorial design principles to improve readability and content flow",
+      "Structured content hierarchy for effective storytelling",
+      "Designed responsive layouts for multiple screen sizes",
+      "Improved visual balance using typography and spacing",
+      "Deployed static websites using GitHub Pages"
+    ],
+
+    techStack: [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "Responsive Design",
+      "GitHub Pages"
+    ],
+
+    features: [
+      "Curated article showcase with titles and summaries",
+      "Clean and minimal editorial design",
+      "Content categorization for intuitive navigation",
+      "Responsive layout across desktop, tablet, and mobile devices",
+      "Integrated visuals to support narrative storytelling",
+      "About and profile section for author background"
+    ],
+
+    repoUrl: "https://github.com/spajetty/journalism-portfolio",
+    websiteUrl: "https://spajetty.github.io/journalism-portfolio/"
   }
 };
 
