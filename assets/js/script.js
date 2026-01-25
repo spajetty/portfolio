@@ -163,6 +163,43 @@ const projectData = {
     repoUrl: "https://github.com/spajetty/dondon-web-app",
     websiteUrl: "https://dondondorayaki.netlify.app/"
   },
+  project4: {
+    title: "Diaria: Digital Diary",
+    category: "Web-Based Diary Application",
+    description:
+      "Diaria is a web-based digital diary that allows users to create, view, edit, and delete personal journal entries. It focuses on simplicity, secure authentication, and real-time cloud data synchronization using Firebase.",
+
+    learned: [
+      "Implemented full CRUD operations for diary entries",
+      "Integrated Firebase Authentication for secure user login",
+      "Used Cloud Firestore for real-time data storage and syncing",
+      "Designed a clean and responsive UI using Bootstrap",
+      "Improved understanding of client-side state and user flows"
+    ],
+
+    techStack: [
+      "HTML",
+      "CSS",
+      "JavaScript (ES6 Modules)",
+      "Bootstrap",
+      "Firebase",
+      "Firebase Authentication",
+      "Cloud Firestore",
+      "VS Code"
+    ],
+
+    features: [
+      "Create and save daily diary entries",
+      "View, edit, and delete existing entries",
+      "Secure user authentication and account management",
+      "Real-time data synchronization with Firebase",
+      "Cloud-based storage for reliability",
+      "Responsive and mobile-friendly design"
+    ],
+
+    repoUrl: "https://github.com/spajetty/diaria-web-app",
+    websiteUrl: "https://diaria.netlify.app/"
+  }
 };
 
 function openModal(projectId) {
