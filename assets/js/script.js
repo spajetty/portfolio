@@ -93,26 +93,41 @@ const projectData = {
     websiteUrl: "https://nutriaksyon.vercel.app/"
   },
   project2: {
-    title: "Task Management System",
-    category: "Productivity Tool",
-    description: "A collaborative task management application with real-time updates and project analytics.",
+    title: "MediTrack",
+    category: "Medication Management System",
+    description:
+      "A full-stack medication management platform that enables doctors and patients to manage prescriptions, track medication intake, and view adherence history through a secure web dashboard.",
     learned: [
-      "Implemented real-time features using SignalR",
-      "Created drag-and-drop interfaces with JavaScript",
-      "Built interactive charts with Chart.js",
-      "Designed responsive UI with Bootstrap",
-      "Implemented team collaboration features"
+      "Implemented role-based authentication for doctors and patients",
+      "Built RESTful APIs using ASP.NET Core and Entity Framework",
+      "Designed prescription and medication tracking workflows",
+      "Handled secure frontend-backend communication using Axios",
+      "Deployed full-stack application using cloud services"
     ],
-    techStack: ["ASP.NET MVC", "SignalR", "Bootstrap", "Chart.js", "jQuery", "SQL Server"],
+    techStack: [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "React",
+      "Vite",
+      "Tailwind CSS",
+      "Axios",
+      "ASP.NET Core",
+      "Entity Framework Core",
+      "SQL Server",
+      "Azure SQL",
+      "Azure App Service",
+      "Vercel"
+    ],
     features: [
-      "Create a new project or join existing team",
-      "Add tasks and assign to team members",
-      "Drag and drop tasks between columns",
-      "Set deadlines and priority levels",
-      "View analytics and progress reports"
+      "Role-based login for doctors and patients",
+      "Create, update, and manage prescriptions",
+      "Track daily medication intake",
+      "View prescription and intake history",
+      "Dashboard view for monitoring adherence"
     ],
-    repoUrl: "YOUR_GITHUB_URL",
-    websiteUrl: "YOUR_WEBSITE_URL"
+    repoUrl: "https://github.com/spajetty/meditrack",
+    websiteUrl: "https://meditrack-web-app.vercel.app/"
   },
   project3: {
     title: "Real Estate CRM",
