@@ -333,3 +333,9 @@ document.addEventListener('keydown', function(e) {
     closeModal();
   }
 });
+
+document.querySelectorAll(".tech-card").forEach(card => {
+  card.addEventListener("click", () => {
+    console.log(card.innerText.trim());
+  });
+});
