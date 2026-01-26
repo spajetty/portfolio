@@ -1462,7 +1462,6 @@ section {
 .contact-card-header {
   display: flex;
   gap: 1rem;
-  margin-bottom: 0.5rem;
 }
 
 .contact-icon {
@@ -1479,7 +1478,7 @@ section {
 .contact-card h4 {
   font-size: 1.125rem;
   font-weight: 700;
-  margin-bottom: 0.25rem;
+  margin-bottom: 7px;
 }
 
 .contact-card p {
@@ -1549,7 +1548,7 @@ section {
 
 .form-group textarea {
   resize: none;
-  min-height: 150px;
+  min-height: 100px;
 }
 
 .submit-btn {
@@ -1562,6 +1561,7 @@ section {
   border-radius: 0.75rem;
   cursor: pointer;
   transition: all 0.3s;
+  margin-top: 10px;
 }
 
 .submit-btn:hover {
