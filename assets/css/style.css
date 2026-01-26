@@ -1222,7 +1222,7 @@ section {
 .section-header h2 {
   font-size: 3rem;
   background: linear-gradient(90deg, #8b5cf6, #ec4899);
-  -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
@@ -1408,8 +1408,8 @@ section {
 /* Hover gradient for each card */
 .tech-card:hover h4 {
   color: transparent;
-  background-clip: text;
   -webkit-background-clip: text;
+  background-clip: text;
 }
 
 /* Apply gradient individually */
