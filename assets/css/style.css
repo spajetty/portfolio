@@ -1345,73 +1345,92 @@ section {
   50% { transform: scale(1.2); }
 }
 
-.skills-grid {
+/* GRID */
+.tech-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2rem;
-}
-
-.skill-card {
-  background: white;
-  padding: 2rem;
-  border-radius: 1.5rem;
-  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
-  transition: all 0.3s;
-}
-
-.skill-card:hover {
-  transform: translateY(-0.5rem);
-  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.15);
-}
-
-.skill-header {
-  display: flex;
-  align-items: center;
+  grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
-  margin-bottom: 1.5rem;
 }
 
-.skill-icon {
-  width: 3rem;
-  height: 3rem;
+/* RESPONSIVE */
+@media (min-width: 768px) {
+  .tech-grid {
+    grid-template-columns: repeat(6, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .tech-grid {
+    grid-template-columns: repeat(8, 1fr);
+  }
+}
+
+/* CARD */
+.tech-card {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
   border-radius: 1rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  font-size: 1.5rem;
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0 10px 15px rgba(0,0,0,0.05);
+  transition: all 0.3s ease;
+  cursor: default;
 }
 
-.skill-header h3 {
-  font-size: 1.25rem;
+.tech-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 25px rgba(0,0,0,0.1);
+}
+
+/* ICON */
+.icon img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+
+.tech-card:hover .icon {
+  transform: scale(1.1);
+}
+
+.icon i {
+  font-size: 1.1rem;
+}
+
+/* TITLE */
+.tech-card h4 {
+  font-size: 0.875rem;
   font-weight: 700;
   color: #111827;
+  transition: all 0.3s ease;
 }
 
-.skill-item {
-  margin-bottom: 1rem;
+/* Hover gradient for each card */
+.tech-card:hover h4 {
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
 }
 
-.skill-name {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 0.5rem;
-  font-weight: 600;
-  color: #374151;
+/* Apply gradient individually */
+.tech-card:hover h4 {
+  /* Example for C# card */
+  background-image: linear-gradient(to right, #9333ea, #2563eb);
 }
 
-.skill-bar {
-  height: 0.75rem;
-  background: #e5e7eb;
-  border-radius: 9999px;
-  overflow: hidden;
-}
-
-.skill-progress {
-  height: 100%;
-  border-radius: 9999px;
-  transition: width 1s ease;
-}
+/* GRADIENTS */
+.gradient-purple-blue { background: linear-gradient(to right, #9333ea, #2563eb); }
+.gradient-blue-cyan { background: linear-gradient(to right, #3b82f6, #06b6d4); }
+.gradient-emerald-teal { background: linear-gradient(to right, #10b981, #14b8a6); }
+.gradient-cyan-blue { background: linear-gradient(to right, #22d3ee, #3b82f6); }
+.gradient-yellow-orange { background: linear-gradient(to right, #facc15, #f97316); }
+.gradient-blue-indigo { background: linear-gradient(to right, #2563eb, #4f46e5); }
+.gradient-red-orange { background: linear-gradient(to right, #ef4444, #f97316); }
+.gradient-orange-yellow { background: linear-gradient(to right, #f97316, #facc15); }
+.gradient-red-pink { background: linear-gradient(to right, #dc2626, #ec4899); }
+.gradient-blue-purple { background: linear-gradient(to right, #2563eb, #7c3aed); }
+.gradient-orange-red { background: linear-gradient(to right, #f97316, #ef4444); }
+.gradient-purple-pink { background: linear-gradient(to right, #9333ea, #ec4899); }
 
 .contact-grid {
   display: grid;
