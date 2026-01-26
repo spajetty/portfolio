@@ -339,3 +339,26 @@ document.querySelectorAll(".tech-card").forEach(card => {
     console.log(card.innerText.trim());
   });
 });
+
+const form = document.querySelector('.contact-form-inner');
+const modal = document.getElementById('successModal');
+const closeBtn = modal.querySelector('.modal-close-btn');
+
+form.addEventListener('submit', async (e) => {
+  e.preventDefault();
+
+  const response = await fetch(form.action, {
+    method: 'POST',
+    body: new FormData(form),
+    headers: { 'Accept': 'application/json' }
+  });
+
+  if (response.ok) {
+    form.reset();
+    modal.classList.add('active');
+  }
+});
+
+closeBtn.addEventListener('click', () => {
+  modal.classList.remove('active');
+});
