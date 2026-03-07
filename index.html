@@ -46,13 +46,10 @@
           <div class="nav-button-bg" style="background: linear-gradient(to right, #f97316, #fbbf24);"></div>
           <span><i class="ri-mail-send-fill"></i> Contact</span>
         </button>
-        <a href="/assets/files/Aguilar, Jethro James S. - Resume.pdf" 
-          class="nav-button resume-btn"
-          style="text-decoration: none !important;"
-          download>
-          <div class="nav-button-bg resume-bg"></div>
-          <span><i class="ri-download-cloud-fill"></i> Resume</span>
-        </a>
+        <button class="nav-button nav-button-resume" onclick="openResumeModal()">
+          <div class="nav-button-bg" style="background: linear-gradient(to right, #8b5cf6, #7c3aed);"></div>
+          <span><i class="ri-download-line"></i> Resume</span>
+        </button>
       </div>
       <button class="hamburger" id="hamburger">
         <span></span>
@@ -720,6 +717,42 @@
       <p>Thanks for reaching out — I’ll get back to you as soon as possible.</p>
 
       <button class="modal-close-btn">Close</button>
+    </div>
+  </div>
+
+  <!-- Resume Download Modal -->
+  <div id="resumeModal" class="modal">
+    <div class="modal-overlay" onclick="closeResumeModal()"></div>
+    <div class="modal-content" style="max-width: 500px;">
+      <button class="modal-close" onclick="closeResumeModal()">
+        <i class="ri-close-line"></i>
+      </button>
+      <div class="modal-body" style="text-align: center;">
+        <div style="width: 80px; height: 80px; margin: 0 auto 1.5rem; background: linear-gradient(135deg, #ec4899, #8b5cf6); border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+          <i class="ri-file-download-line" style="font-size: 2.5rem; color: white;"></i>
+        </div>
+        <h2 style="font-size: 1.75rem; font-weight: 700; margin-bottom: 0.75rem; color: #111827;">Download Resume?</h2>
+        <p style="color: #6b7280; margin-bottom: 2rem; line-height: 1.6;">
+          You're about to download my resume. Would you like to proceed?
+        </p>
+        <div style="display: flex; gap: 1rem; margin-bottom: 2rem;">
+          <button onclick="confirmDownload()" class="modal-btn modal-btn-visit" style="flex: 1;">
+            <i class="ri-download-line"></i> Yes, Download
+          </button>
+          <button onclick="closeResumeModal()" class="modal-btn modal-btn-repo" style="flex: 1; background: #e5e7eb; color: #374151;">
+            <i class="ri-close-line"></i> Cancel
+          </button>
+        </div>
+        <div style="padding-top: 1.5rem; border-top: 2px solid #f3f4f6;">
+          <p style="color: #6b7280; font-size: 0.875rem; margin-bottom: 0.75rem;">
+            Prefer to view online instead?
+          </p>
+          <a href="https://spajetty.github.io/resume/" target="_blank" style="color: #7c3aed; font-weight: 600; text-decoration: none; display: inline-flex; align-items: center; gap: 0.5rem; transition: all 0.3s;">
+            <i class="ri-external-link-line"></i> View Resume in Browser
+            <span style="font-size: 0.75rem; color: #9ca3af;">(in case download fails)</span>
+          </a>
+        </div>
+      </div>
     </div>
   </div>
 

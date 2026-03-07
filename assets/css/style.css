@@ -35,6 +35,26 @@ nav.scrolled {
   justify-content: space-between;
 }
 
+.nav-button-resume {
+  background: linear-gradient(to right, #8b5cf6, #7c3aed);
+  color: white !important;
+  border: 2px solid transparent;
+  box-shadow: 0 4px 15px rgba(139, 92, 246, 0.4);
+}
+
+nav.scrolled .nav-button-resume {
+  color: white !important;
+}
+
+.nav-button-resume:hover {
+  box-shadow: 0 8px 25px rgba(139, 92, 246, 0.6);
+  transform: scale(1.08);
+}
+
+.nav-button-resume .nav-button-bg {
+  opacity: 1 !important;
+}
+
 .logo-section {
   display: flex;
   align-items: center;

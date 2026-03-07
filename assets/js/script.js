@@ -362,3 +362,32 @@ form.addEventListener('submit', async (e) => {
 closeBtn.addEventListener('click', () => {
   modal.classList.remove('active');
 });
+
+// Resume download functions
+function openResumeModal() {
+  const modal = document.getElementById('resumeModal');
+  modal.classList.add('active');
+  document.body.style.overflow = 'hidden';
+}
+
+function closeResumeModal() {
+  const modal = document.getElementById('resumeModal');
+  modal.classList.remove('active');
+  document.body.style.overflow = 'auto';
+}
+
+function confirmDownload() {
+  // Replace with your actual resume download link
+  const resumeUrl = 'YOUR_RESUME_DOWNLOAD_LINK.pdf';
+  
+  // Create temporary link and trigger download
+  const link = document.createElement('a');
+  link.href = resumeUrl;
+  link.download = 'Jethro_James_Aguilar_Resume.pdf';
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
+  
+  // Close modal after download starts
+  closeResumeModal();
+}
