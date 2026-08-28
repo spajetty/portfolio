@@ -378,7 +378,7 @@ function closeResumeModal() {
 
 function confirmDownload() {
   // Replace with your actual resume download link
-  const resumeUrl = 'YOUR_RESUME_DOWNLOAD_LINK.pdf';
+  const resumeUrl = '/assets/files/Aguilar_Resume.pdf';
   
   // Create temporary link and trigger download
   const link = document.createElement('a');
