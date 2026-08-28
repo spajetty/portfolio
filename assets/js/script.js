@@ -52,7 +52,7 @@ window.addEventListener('load', () => {
 
 // Project data
 const projectData = {
-  project1: {
+  project6: {
     title: "NutriAksyon",
     category: "Child Nutrition Monitoring System",
     description:
@@ -92,7 +92,7 @@ const projectData = {
     repoUrl: "https://github.com/spajetty/nutriaksyon", // Private repository (Data Privacy Act of 2012)
     websiteUrl: "https://nutriaksyon.vercel.app/"
   },
-  project2: {
+  project5: {
     title: "MediTrack",
     category: "Medication Management System",
     description:
@@ -129,7 +129,7 @@ const projectData = {
     repoUrl: "https://github.com/spajetty/meditrack",
     websiteUrl: "https://meditrack-web-app.vercel.app/"
   },
-  project3: {
+  project4: {
     title: "DonDon: Dorayaki Bites!",
     category: "Food Management System",
     description:
@@ -163,7 +163,7 @@ const projectData = {
     repoUrl: "https://github.com/spajetty/dondon-web-app",
     websiteUrl: "https://dondondorayaki.netlify.app/"
   },
-  project4: {
+  project3: {
     title: "Diaria: Digital Diary",
     category: "Web-Based Diary Application",
     description:
@@ -200,7 +200,7 @@ const projectData = {
     repoUrl: "https://github.com/spajetty/diaria-web-app",
     websiteUrl: "https://diaria.netlify.app/"
   },
-  project5: {
+  project2: {
     title: "Planorama",
     category: "Event Management System",
     description:
@@ -234,7 +234,7 @@ const projectData = {
 
     repoUrl: "https://github.com/spajetty/event-mngmnt-system"
   },
-  project6: {
+  project1: {
     title: "Journalism Portfolio Website",
     category: "Personal Portfolio Website",
     description:
