@@ -52,6 +52,90 @@ window.addEventListener('load', () => {
 
 // Project data
 const projectData = {
+  project8: {
+    title: "REFER",
+    category: "Employment Referral & Recruitment System",
+    description:
+      "A full-stack web-based employment referral and recruitment system designed to connect jobseekers and employers through a centralized platform. The system supports jobseeker information, employment opportunities, job matching, and referral activities.",
+    learned: [
+      "Developed a full-stack application using React, TypeScript, Node.js, and Express",
+      "Built multi-step jobseeker registration and profile management workflows",
+      "Implemented job searching, filtering, and matching functionality",
+      "Developed RESTful APIs for employment-related operations",
+      "Implemented email verification and account recovery workflows",
+      "Designed the system while adhering to institutional confidentiality requirements"
+    ],
+    techStack: [
+      "React",
+      "TypeScript",
+      "Vite",
+      "Tailwind CSS",
+      "React Query",
+      "Node.js",
+      "Express.js",
+      "MySQL",
+      "MariaDB",
+      "REST APIs",
+      "JWT",
+      "Postman",
+      "Git",
+      "GitHub",
+      "Hostinger"
+    ],
+    features: [
+      "Jobseeker profile management",
+      "Job opportunity management",
+      "Job searching and filtering",
+      "Qualification-based job matching",
+      "Employment referral management",
+      "Saved job opportunities",
+      "Employment-related dashboards",
+      "Email verification and account recovery",
+      "Role-based access control"
+    ],
+    repoUrl: "https://github.com/spajetty/refer-peso",
+    websiteUrl: null,
+    nda: true
+  },
+  project7: {
+    title: "ASCEND",
+    category: "Public Employment Division Management System",
+    description:
+      "An internal web-based management and reporting system developed to support employment program data management within a Public Employment Service Office (PESO). The system provides authorized personnel with a centralized platform for organizing, monitoring, and reporting employment-related information.",
+    learned: [
+      "Developed a database-driven web application for institutional use",
+      "Designed centralized employment data management workflows",
+      "Implemented dashboards, data visualization, and reporting functionality",
+      "Developed data searching, filtering, import, and export capabilities",
+      "Implemented role-based access for authorized personnel",
+      "Worked within institutional confidentiality and NDA requirements"
+    ],
+    techStack: [
+      "HTML5",
+      "CSS3",
+      "JavaScript",
+      "Tailwind CSS",
+      "PHP",
+      "MySQL",
+      "MariaDB",
+      "Postman",
+      "Git",
+      "GitHub",
+      "Hostinger"
+    ],
+    features: [
+      "Centralized employment program data management",
+      "Period-based data monitoring",
+      "Dashboards and data visualization",
+      "Report generation",
+      "Data searching and filtering",
+      "Data import and export",
+      "Role-based access control"
+    ],
+    repoUrl: "https://github.com/spajetty/ascend-peso",
+    websiteUrl: null,
+    nda: true
+  },
   project6: {
     title: "NutriAksyon",
     category: "Child Nutrition Monitoring System",
@@ -274,7 +358,7 @@ function openModal(projectId) {
   const modal = document.getElementById('projectModal');
   const modalBody = document.getElementById('modalBody');
   const project = projectData[projectId];
-  
+
   modalBody.innerHTML = `
     <div class="modal-body">
       <h2 class="modal-title">${project.title}</h2>
@@ -302,21 +386,40 @@ function openModal(projectId) {
       <div class="modal-section">
         <h3><i class="ri-guide-line"></i> Features</h3>
         <ul>
-          ${project.features.map(step => `<li>${step}</li>`).join('')}
+          ${project.features.map(feature => `<li>${feature}</li>`).join('')}
         </ul>
       </div>
       
       <div class="modal-actions">
-        <button class="modal-btn modal-btn-repo" onclick="window.open('${project.repoUrl}', '_blank')">
-          <i class="ri-github-fill"></i> View Repository
-        </button>
-        <button class="modal-btn modal-btn-visit" onclick="window.open('${project.websiteUrl}', '_blank')">
-          <i class="ri-external-link-fill"></i> Visit Website
-        </button>
+        ${
+          project.repoUrl
+            ? `
+              <button
+                class="modal-btn modal-btn-repo"
+                onclick="window.open('${project.repoUrl}', '_blank')"
+              >
+                <i class="ri-github-fill"></i> View Repository
+              </button>
+            `
+            : ''
+        }
+
+        ${
+          project.websiteUrl
+            ? `
+              <button
+                class="modal-btn modal-btn-visit"
+                onclick="window.open('${project.websiteUrl}', '_blank')"
+              >
+                <i class="ri-external-link-fill"></i> Visit Website
+              </button>
+            `
+            : ''
+        }
       </div>
     </div>
   `;
-  
+
   modal.classList.add('active');
   document.body.style.overflow = 'hidden';
 }
