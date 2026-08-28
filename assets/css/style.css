@@ -1401,6 +1401,78 @@ section {
   line-height: 1.6;
 }
 
+.exp-card {
+  display: flex;
+  gap: 1.5rem;
+  background: white;
+  border-radius: 1.5rem;
+  padding: 2rem;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+  transition: transform 0.4s, box-shadow 0.4s;
+}
+
+#exp-desc {
+  color: #ffffff !important;  
+}
+
+.exp-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 30px 60px rgba(0,0,0,0.12);
+}
+
+.exp-card .icon {
+  width: 64px;
+  height: 64px;
+  border-radius: 1rem;
+  display: grid;
+  place-items: center;
+  color: white;
+  font-size: 1.75rem;
+  flex-shrink: 0;
+}
+
+.exp-org-icon {
+  background: linear-gradient(135deg, #f97316, #ec4899);
+}
+
+.exp-roles {
+  margin-top: 1.25rem;
+  border-left: 2px solid #e5e7eb;
+  padding-left: 1.5rem;
+}
+
+.exp-role {
+  position: relative;
+  padding-bottom: 1.25rem;
+}
+
+.exp-role:last-child {
+  padding-bottom: 0;
+}
+
+.exp-role-dot {
+  position: absolute;
+  left: -1.56rem;
+  top: 0.35rem;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #ec4899;
+}
+
+.exp-role-body h4 {
+  margin: 0 0 0.15rem;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #111827;
+}
+
+.exp-role-meta {
+  display: block;
+  font-size: 0.85rem;
+  color: #6b7280;
+}
+
 /* ANIMATIONS */
 @keyframes pulse {
   0%, 100% { transform: scale(1); }
